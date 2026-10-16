@@ -18,7 +18,7 @@ def process_pool(request):
     from triton._internal_testing import is_hopper_or_newer, use_process_pool
 
     if request.config.getoption("--warmup-only", default=False) or os.environ.get("DISABLE_SUBPROCESS"):
-        yield
+        yiel
         return
     if not is_hopper_or_newer():
         yield
